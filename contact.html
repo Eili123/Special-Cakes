@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Special Cakes</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Special Cakes Logo" class="logo" onclick="window.location.href='index.html'">
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cakeforsale.html">Cakes For Sale</a>
+        </nav>
+        <img src="images/BakeryImage2.png" alt="Banner Image" class="banner">
+    </header>
+ 
+    <main id="mainbody">
+        <h1>Get in touch with us</h1>
+        <form action="mailto:specialcakes@email.com" method="post">
+     <table>
+        <tr>
+            <th><label for="name">Full Name:</label></th>
+           <td><input type="text" id="name" name="name" required></td>
+        </tr>
+        <tr>
+           <th><label for="email">Email Address:</label></th> 
+            <td><input type="email" id="email" name="email" required></td>
+        </tr>
+        <tr>
+           <th><label for="phone">Phone Number:</label></th>
+            <td><input type="text" id="phone" name="phone" required pattern="[0-9]+"></td>
+        </tr>
+        <tr>
+            <th><label for="feedback">Your question or feedback:</label></th>
+            <td><textarea id="feedback" name="feedback" rows="4" required></textarea></td>
+        </tr>
+        <tr>
+            <th><button type="submit">Submit</button></th>
+        </tr>
+        
+    </table>
+</form>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024  Special Cakes</p>
+    </footer>
+</body>
+</html>

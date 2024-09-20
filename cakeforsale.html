@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cakes For Sale</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <header>
+        <img src="images/logo.png" alt="Special Cakes Logo" class="logo" onclick="window.location.href='index.html'">
+       
+        <nav id="mainNav">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="contact.html">Contact</a>
+            <a href="cakeforsale.html">Cakes For Sale</a>
+        </nav>
+    <img src="images/bannerCake3.png" alt="Banner Image" class="banner">
+    </header>
+    <main id="mainbody">
+        <div>
+            <h1>Cakes for Sale</h1>
+        </div>
+        <div class="cake-gallery">
+            <!-- tumbanail -->
+            <figure>
+            <a href="#img1"><img src="images/small/specialOccasion300.jpg" alt="Speciality Cake"></a>
+            <p class="caption">Speciality Cake</p>
+        </figure>
+        <!-- end tumbanail-->
+         <!-- tumbanail -->
+        <figure>
+            <a href="#img2"><img src="images/small/chocolateCake300.jpg" alt="Flavoured Cake"></a>
+            <p class="caption">Flavoured Cake</p>
+        </figure>
+        <!-- end tumbanail-->
+        <!-- tumbanail -->
+        <figure>
+            <a href="#img3"><img src="images/small/cheeseCake300.jpg" alt="Cheesecake"></a>
+            <p class="caption">Cheesecake</p>
+        </figure>
+        <!-- end tumbanail-->
+        <!-- tumbanail -->
+        <figure>
+            <a href="#img4"><img src="images/small/brownie300.jpg" alt="Brownie"></a>
+            <p class="caption">Brownie</p>
+        </figure>
+        <!-- end tumbanail-->
+        <!-- tumbanail -->
+        <figure>
+            <a href="#img5"><img src="images/small/cupcake300.jpg" alt="Cupcake"></a>
+            <p class="caption">Cupcake</p>
+        </figure>
+        <!-- end tumbanail-->
+        <!-- tumbanail -->
+        <figure>
+            <a href="#img6"><img src="images/small/macaron300.jpg" alt="Macaron"></a>
+            <p class="caption">Macaron</p>
+        </figure>
+        <!-- end tumbanail-->
+        </div>
+
+        <h2>Prices</h2>
+        <div>
+        <table id="tableID">
+            <tr><th>Cake Size</th><th>Suitable for</th><th>Price</th></tr>
+            <tr><td>Small</td><td>8-10 people</td><td>$50.00</td></tr>
+            <tr><td>Medium</td><td>10-12 people</td><td>$60.00</td></tr>
+            <tr><td>Large</td><td>16-20 people</td><td>$100.00</td></tr>
+        </table>
+        </div>
+
+        <h2>How to order</h2>
+      <div>
+        <form id="formID" action="mailto:specialcakes@email.com" method="post">
+        
+         <label for="name">Full Name:</label>
+         <input type="text" id="name" name="name" required>
+      
+         <label for="email">Email Address:</label>
+           <input type="email" id="email" name="email" required>
+    
+           <label for="phone">Phone Number:</label>
+           <input type="tel" id="phone" name="phone" required id="button"[0-9]+>
+        
+       <label for="cake">Type of Cake:</label>
+         <input type="text" id="cake" name="cake" required>
+        
+          <label for="date">Date Required:</label>
+          <input type="date" id="date" name="date" required>
+        
+        <input type="submit" value="Submit">
+        </form>
+    </div>
+    </main>
+    <footer id="footer">
+        <p>&copy; 2024  Special Cakes</p>
+    </footer>
+
+    <!-- Large -->
+     <a href="#" class="lightbox" id="img1">
+        <span style="background-image: url('images/large/specialOccasion900.jpg');"></span>
+     </a>
+     <!-- End Large -->
+      <!-- Large -->
+     <a href="#" class="lightbox" id="img2">
+        <span style="background-image: url('images/large/chocolateCake640.jpg');"></span>
+     </a>
+     <!-- End Large -->
+      <!-- Large -->
+     <a href="#" class="lightbox" id="img3">
+        <span style="background-image: url('images/large/cheeseCake640.jpg');"></span>
+     </a>
+     <!-- End Large -->
+      <!-- Large -->
+     <a href="#" class="lightbox" id="img4">
+        <span style="background-image: url('images/large/brownie640.jpg');"></span>
+     </a>
+     <!-- End Large -->
+      <!-- Large -->
+     <a href="#" class="lightbox" id="img5">
+        <span style="background-image: url('images/large/cupcake640.jpg');"></span>
+     </a>
+     <!-- End Large-->
+      <!-- Large -->
+     <a href="#" class="lightbox" id="img6">
+        <span style="background-image: url('images/large/macaron640.jpg');"></span>
+     </a>
+     <!-- End Large -->
+</body>
+</html>

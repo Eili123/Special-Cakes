@@ -1,0 +1,198 @@
+/* Basic styles for the website */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: white;
+    color: #333;
+    line-height: 1.3em;
+}
+
+header {
+    background-color: white;
+    padding: 20px;
+
+    color: white;
+}
+
+#mainNav {
+    text-align:right;
+}
+#mainNav a:link,
+#mainNav a:visited {
+    color:darkblue; /* Replace with navy from the specifications document */
+}
+#mainNav a:hover {
+    color:red; /* Replace with burnt red from the specifications document */
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+section {
+    padding: 40px;
+    text-align: center;
+}
+
+h2 {
+    font-size: 2rem;
+    color: #0f0101;
+}
+
+#about p, #our-cakes ul, #testimonials p {
+    font-size: 1.1rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#our-cakes ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+#our-cakes ul li {
+    margin: 10px 0;
+}
+
+#gallery .gallery-images {
+    margin-top: 20px;
+}
+.cake-gallery {
+    display: grid;
+    grid-auto-flow: row;
+    grid-template-columns: repeat(3, 33.3%);
+    margin-top: 20px;
+}
+
+#gallery img {
+    width: 200px;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(7, 0, 0, 0.1);
+}
+
+#contact p {
+    font-size: 1.1rem;
+}
+
+#footer {
+    background-color: #0C243C;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    bottom: 0;
+    width: 100%;
+}
+
+#footer p {
+    margin: 0;
+}
+
+#mainbody{
+    text-align: center;
+}
+/* Lightbox CSS */
+.lightbox {
+    /* Default to hidden */
+    display: none;
+    /* Overlay entire screen */
+    position: fixed;
+    z-index: 999;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* A bit of padding around image */
+    padding: 1em;
+    /* Translucent background */ 
+    background: rgba(0, 0, 0, 0.8);
+}
+
+/* Unhide the lightbox when it's the target */
+.lightbox:target {
+    display: block;
+}
+
+.lightbox span {
+    /* Full width and hight */
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    /* Size and position background image */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain; 
+}
+#caption {
+    text-align: center;  /* Center the caption */
+    color: rgb(6, 0, 0);        /* Text color, since your background is dark */
+    margin-top: 10px;    /* Space between the image and caption */
+    font-size: 1.2em;    /* Adjust font size if needed */
+}
+#form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#input textarea {
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc; 
+    border-radius: 5px;
+    width: 100%;
+}
+#lable {
+    font-size: 18px;
+    text-align: left;
+}
+#button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#button:hover {
+    background-color: #555;
+}
+#formID {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width:50%;
+    margin:0px auto;
+}
+#formID input {
+    margin-bottom:10px;
+}
+
+
+#tableID {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+}
+#tableID th {
+    background-color:darkblue; /* Replace with navy from the specifications document */
+    padding:10px;
+    color: white;
+}
+#tableID td {
+   flex-direction: column; 
+   padding: 20px;
+   border: 1px solid #555;
+      border-radius: 5px;
+   line-height: 30px;
+   line-break: auto;
+   inset-block: 20px;
+
+}
